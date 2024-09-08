@@ -1,3 +1,271 @@
-//====================================================================================================
+.footer {
+  background-image: url('../img/footer/footer-bg.png');
+  @media (max-width: $mobile) {
+    background-image: url('../img/footer/footer-bg-mob.png');
+  }
+  & a {
+    transition: color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+    &:hover {
+      color: $mainGreen;
+    }
+  }
+  // .footer__container
+  &__container {
+  }
 
-//====================================================================================================
+  // .footer__body
+  &__body {
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  // .footer__info
+  &__info {
+    flex-basis: 30%;
+    color: #818181;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.14px;
+  }
+
+  // .footer__logo
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  // .footer__logo-img
+  &__logo-img {
+  }
+
+  // .footer__policy-text
+  &__policy-text {
+    margin-bottom: 30px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__policy-text:nth-last-child(2n) {
+    margin-bottom: 25px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .footer__policy-link
+  &__policy-link {
+    font-weight: 900;
+    text-decoration-line: underline;
+  }
+
+  // .footer__address
+  &__address {
+    margin-bottom: 15px;
+    text-wrap: balance;
+
+    & span {
+      color: $mainBlack;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 5px;
+      line-height: 200%;
+    }
+  }
+
+  // .footer__phone
+  &__phone {
+    margin-bottom: 32px;
+
+    & span {
+      color: $mainBlack;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .footer__phone-link
+  &__phone-link {
+  }
+
+  // .footer__offer-link
+  &__offer-link {
+    margin-bottom: 27px;
+    line-height: normal;
+    text-decoration-line: underline;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .footer__socials
+  &__socials {
+    display: flex;
+    gap: 10px;
+  }
+
+  // .footer__socials-link
+  &__socials-link {
+  }
+
+  // .footer__icon
+  &__icon {
+  }
+
+  // .footer__menu
+  &__menu {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    color: $mainBlack;
+  }
+
+  // .footer__menu-nav
+  &__menu-nav {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  // .footer__menu-left
+  &__menu-left {
+  }
+
+  // .footer__menu-title
+  &__menu-title {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  // .footer__menu-list
+  &__menu-list {
+  }
+
+  // .footer__menu-item
+  &__menu-item {
+    &:not(:last-child) {
+      margin-bottom: 17px;
+
+      @media (max-width: $mobile) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  // .footer__menu-link
+  &__menu-link {
+  }
+
+  // .footer__menu-right
+  &__menu-right {
+  }
+
+  // .footer__menu-list-wide
+  &__menu-list-wide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .footer__callback
+  &__callback {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+
+    @media (max-width: $mobile) {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  // .footer__callback-btn
+  &__callback-btn {
+    margin-bottom: 20px;
+
+    @media (max-width: $mobile) {
+      width: 247px;
+      margin: 0 auto 20px;
+    }
+  }
+
+  // .footer__callback-wa
+  &__callback-wa {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    & a {
+      font-weight: 900;
+      text-decoration-line: underline;
+      color: $mainGreen;
+
+      &:hover {
+        color: $mainRed;
+      }
+    }
+  }
+
+  // .footer__copy
+  &__copy {
+    padding: 22px 0;
+    text-align: center;
+    background: #ebeff0;
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+    }
+  }
+
+  // .footer__copy-name
+  &__copy-name {
+    font-weight: 900;
+  }
+}
+
+.btn-up {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  -webkit-tap-highlight-color: transparent;
+
+  & svg circle,
+  & svg path {
+    transition: all 0.2s;
+  }
+
+  &:hover svg circle,
+  &:hover svg path {
+    stroke: $mainGreen;
+  }
+
+  @media (max-width: 1350px) {
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+  }
+}
