@@ -11,7 +11,7 @@
       left: -100%;
       top: 0;
       overflow: auto;
-      padding: toRem(50) toRem(15) toRem(15) toRem(30);
+      padding: toRem(50) toRem(15) toRem(15) toRem(15);
       transition: left 0.3s;
       &::before {
         content: '';

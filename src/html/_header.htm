@@ -11,13 +11,17 @@
         <div class="top-header__free">
           Бесплатная консультация
         </div>
-        <a data-da=".menu__body, 991.98" href="#" class="top-header__link top-header__address">
+        <a data-da=".menu__list, 991.98" href="#" class="top-header__link top-header__address">
           <img class="top-header__icon" src="../img/icons/icon-pin.svg" alt="Иконка пин">
           <span>г. Москва, ул. Габричевского, д. 5, корп. 10</span>
         </a>
         <div data-da=".header__mobile-links, 991.98" class="top-header__socials">
-          <img class="top-header__icon" src="../img/icons/icon-wa.svg" alt="WhatsApp">
-          <img class="top-header__icon" src="../img/icons/icon-wa.svg" alt="Telegram">
+          <a class="top-header__socials-link" href="#">
+            <img class="top-header__icon" src="../img/icons/icon-wa.svg" alt="WhatsApp">
+          </a>
+          <a class="top-header__socials-link" href="#">
+            <img class="top-header__icon" src="../img/icons/icon-wa.svg" alt="Telegram">
+          </a>
         </div>
         <button class="top-header__btn">заказать звонок</button>
       </div>
@@ -31,15 +35,15 @@
         <div class="header__menu menu">
           <nav class="menu__body">
             <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#" class="menu__link menu__link-dropdown">
+              <li class="menu__item menu__item-dropdown">
+                <a href="#" class="menu__link">
                   О центре
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
                     <path d="M11 1L6 6L1 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
                 </a>
-                <!-- dropdown -->
+                <!-- dropdown 1 -->
                 <ul class="menu__sublist">
                   <li class="menu__subitem">
                     <a href="#" class="menu__sublink">Воровство</a>
@@ -77,16 +81,16 @@
               <li class="menu__item">
                 <a href="#" class="menu__link">Отзывы</a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link menu__link-dropdown">
+              <li class="menu__item menu__item-dropdown">
+                <a href="#" class="menu__link">
                   Услуги
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
                     <path d="M11 1L6 6L1 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
                 </a>
-                <!-- dropdown -->
-                <!-- <ul class="menu__sublist">
+                <!-- dropdown 2 -->
+                <ul class="menu__sublist">
                   <li class="menu__subitem">
                     <a href="#" class="menu__sublink">Пункт 2</a>
                   </li>
@@ -108,7 +112,7 @@
                   <li class="menu__subitem">
                     <a href="#" class="menu__sublink">Пункт 2</a>
                   </li>
-                </ul> -->
+                </ul>
                 <!-- dropdown -->
               </li>
               <li class="menu__item">
