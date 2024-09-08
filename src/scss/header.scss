@@ -44,6 +44,27 @@
     letter-spacing: 0.32px;
   }
 
+  &__link span {
+    @media (min-width: $tablet) {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        width: 0;
+        background-color: #fff;
+        transition: width 0.2s;
+      }
+    }
+  }
+
+  &__link span:hover::after {
+    width: 100%;
+  }
+
   // .top-header__phone
   &__phone {
     margin-right: 10px;
@@ -100,9 +121,20 @@
     }
   }
 
+  // .top-header__socials-link
+  &__socials-link {
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #fff;
+      border-radius: 7px;
+    }
+  }
+
   // .top-header__btn
   &__btn {
     height: 100%;
+    width: 200px;
     padding: 0 21px;
     background-color: $mainRed;
     margin-left: auto;
@@ -110,6 +142,12 @@
     font-weight: 900;
     letter-spacing: 0.28px;
     text-transform: uppercase;
+    transition: 0.2s;
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    box-shadow: inset 200px 0 0 0 $mainGreen;
   }
 }
 
@@ -190,7 +228,7 @@
 
     @media (min-width: $tablet) {
       &:hover {
-        color: #31b97b;
+        color: $mainGreen;
       }
     }
   }
@@ -278,7 +316,7 @@
   transition: color 0.2s;
   color: $mainBlack;
   &:hover {
-    color: #31b97b;
+    color: $mainGreen;
   }
 }
 
@@ -301,7 +339,7 @@
   }
 
   &:hover::before {
-    background-color: #31b97b;
+    background-color: $mainGreen;
   }
 
   @media (max-width: $mobile) {
@@ -322,5 +360,5 @@
 }
 
 .link-active {
-  color: #31b97b;
+  color: $mainGreen;
 }
