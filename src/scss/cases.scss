@@ -1,0 +1,68 @@
+.cases {
+  margin-bottom: 82px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 15px;
+  }
+  // .cases__container
+  &__container {
+  }
+
+  // .cases__title
+  &__title {
+    margin-bottom: 50px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .cases__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 28px;
+    row-gap: 30px;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+  }
+
+  // .cases__item
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: $mainLavender;
+    border-radius: 5px;
+
+    @media (max-width: $mobile) {
+      padding: 12px 17px;
+    }
+  }
+
+  // .cases__img
+  &__img {
+  }
+
+  // .cases__text
+  &__text {
+    color: $mainBlack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+    }
+  }
+}
+.h2-title {
+}

@@ -1,5 +1,10 @@
 .advantages {
+  margin-bottom: 100px;
   background-color: $mainGreen;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
   // .advantages__container
   &__container {
   }
@@ -84,7 +89,6 @@
 
   // .advantages__text-bottom
   &__text-bottom {
-    display: block;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: -0.28px;

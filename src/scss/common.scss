@@ -21,3 +21,32 @@ body {
 .main-btn:focus {
   box-shadow: inset 500px 0 0 0 $mainGreen;
 }
+
+h2 {
+  color: $mainBlack;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  text-wrap: balance;
+}
+
+.title-decor-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &::after {
+    content: url('../img/icons/decor-1.png');
+
+    @media (max-width: $mobile) {
+      transform: scale(0.75);
+    }
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 22px;
+    line-height: 110%;
+  }
+}
