@@ -13,7 +13,6 @@
   &__container {
     display: flex;
     position: relative;
-    max-height: 767px;
 
     @media (max-width: $mobile) {
       justify-content: center;
@@ -37,9 +36,14 @@
   }
 
   // .hero__img-mobile
-  // &__img-mobile {
-  //   display: none;
-  // }
+  &__img-mobile {
+    @media (max-width: $tablet) {
+      width: 70%;
+    }
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
 
   // .hero__body
   &__body {
