@@ -1,0 +1,226 @@
+.hero {
+  background-image: url('../img/hero/hero-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: $tablet) {
+    background-image: url('../img/hero/hero-bg-mobile.png');
+    background-position: top;
+  }
+
+  // .hero__container
+  &__container {
+    display: flex;
+    position: relative;
+    max-height: 767px;
+
+    @media (max-width: $mobile) {
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__img-img {
+    margin-right: -90px;
+    margin-top: 34px;
+    max-width: 100%;
+    height: auto;
+
+    @media (max-width: $tablet) {
+      z-index: 2;
+    }
+  }
+
+  // .hero__img-mobile
+  // &__img-mobile {
+  //   display: none;
+  // }
+
+  // .hero__body
+  &__body {
+    padding-top: 104px;
+
+    //test
+    padding-bottom: 30px;
+
+    @media (max-width: $tablet) {
+      padding: 20px 0;
+    }
+  }
+
+  // .hero__info
+  &__info {
+    min-width: 700px;
+    flex-shrink: 0;
+
+    @media (max-width: $tablet) {
+      min-width: 0;
+    }
+  }
+
+  // .hero__title
+  &__title {
+    max-width: 788px;
+    margin-bottom: 10px;
+    color: $mainBlack;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: -0.56px;
+    text-wrap: balance;
+
+    @media (max-width: $tablet) {
+      max-width: none;
+    }
+
+    @media (max-width: $tablet) {
+      margin-bottom: 5px;
+      font-size: 20px;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  // .hero__title-decor
+  &__title-decor {
+    color: $mainRed;
+  }
+
+  // .hero__tex
+  &__text {
+    max-width: 541px;
+    margin-bottom: 20px;
+    color: $mainColor;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    text-wrap: balance;
+
+    @media (max-width: $tablet) {
+      max-width: none;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+  }
+
+  // .hero__btn
+  &__btn {
+    margin-bottom: 30px;
+
+    @media (max-width: $tablet) {
+      position: relative;
+      z-index: 3;
+      display: block;
+      max-width: 100%;
+      margin: -50px auto 15px;
+
+      font-weight: 900;
+      line-height: 120%; /* 16.8px */
+      letter-spacing: 0.28px;
+      text-wrap: balance;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 9px 30px;
+      font-size: 14px;
+    }
+  }
+
+  // .hero__link
+  &__link {
+    display: block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+    transition: all 0.2s;
+
+    & a {
+      color: $mainGreen;
+      font-weight: 900;
+      text-decoration-line: underline;
+      &:hover {
+        color: red;
+      }
+
+      &:hover svg path {
+        fill: red;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+
+  // .hero__result
+  &__result {
+    position: absolute;
+    bottom: 68px;
+    left: 39%;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 7px 28px 0px rgba(0, 0, 0, 0.09);
+
+    @media (max-width: 1150px) {
+      left: 50%;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 9px 11px 7px;
+      left: auto;
+      right: 15px;
+      bottom: auto;
+      top: 400px;
+    }
+
+    @media (max-width: $tablet) {
+      top: 125px;
+    }
+  }
+
+  // .hero__result-text
+  &__result-text {
+    display: block;
+    color: $mainBlack;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.78px;
+    text-transform: uppercase;
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+      letter-spacing: 0.36px;
+    }
+  }
+
+  // .hero__result-decor
+  &__result-decor {
+    display: block;
+    color: $mainGreen;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.56px;
+
+    @media (max-width: $tablet) {
+      font-size: 13px;
+      line-height: 100%;
+      letter-spacing: 0.26px;
+    }
+  }
+}
