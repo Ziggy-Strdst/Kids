@@ -1,0 +1,75 @@
+.why {
+  // .why__container
+  &__container {
+  }
+
+  // .why__body
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    @media (max-width: $tablet) {
+      gap: 25px;
+    }
+  }
+
+  // .why__row
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+
+  // .why__row-left
+  &__row-left {
+  }
+
+  // .why__row-img
+  &__row-img {
+  }
+
+  // .why__row-right
+  &__row-right {
+  }
+
+  // .why__title
+  &__title {
+    text-wrap: balance;
+  }
+
+  // .why__title-decor
+  &__title-decor {
+    color: $mainRed;
+    display: block;
+  }
+
+  // .why__bottom
+  &__bottom {
+  }
+
+  // .why__card
+  &__card {
+  }
+
+  // .why__card-img
+  &__card-img {
+  }
+
+  // .why__card-info
+  &__card-info {
+  }
+
+  // .why__card-title
+  &__card-title {
+  }
+
+  // .why__card-text
+  &__card-text {
+  }
+}
